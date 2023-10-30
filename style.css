@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+}
+
+body {
+  font-family: montserrat, arial, verdana;
+  background: linear-gradient(to top, #ffc0cb 20%, #ffeadb 100%);
+}
+
+.multi-step-form {
+  margin: 100px auto;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #333;
+  border-radius: 3px;
+  padding: 40px;
+  max-width: 300px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  gap: 4px;
+}
+
+.form-group:last-child {
+  margin: 0;
+}
+
+label {
+  font-weight: bold;
+  font-size: 12.8px;
+  color: #333;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 16px;
+  margin-bottom: 10.4px;
+}
+
+button {
+  width: 100px;
+  background: #43bb6b;
+  font-weight: bold;
+  color: #fff;
+  transition: 150ms;
+  border: 0 none;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 10px 5px;
+  margin: 10px 5px;
+}
+button:hover {
+  background: #369a58;
+  color: white;
+}
+
+.step-title {
+  margin: 0;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.card.active {
+  display: block;
+}
+
+.multi-step-form {
+  overflow: hidden;
+  position: relative;
+}
